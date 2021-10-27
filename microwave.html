@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Microwave</title>
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+        <link rel="stylesheet" href="microwave-style.css">
+
+
+    </head>
+    <!--  Display microwave timer to 00:00 onload-->
+    <body >
+
+        <div class="micro-gui">
+            <div id="foodDisplay" class="foodDisplay"></div>
+
+            <div class="micro-container">
+
+                <div class="btn-container">
+
+                        <input type="text" id="txtNumber" maxlength="5" name="txtNumber" disabled/>
+                        <br/><br/>
+
+
+                        <button class="button-layout number-only" value="1" id="1" onclick="addNumber(this);">1</button>
+                        <button class="button-layout number-only" value="2" id="2" onclick="addNumber(this);">2</button>
+                        <button class="button-layout number-only" value="3" id="3" onclick="addNumber(this);">3</button>
+
+                        <br/>
+
+
+                        <button class="button-layout number-only" value="4" id="4" onclick="addNumber(this);">4</button>
+                        <button class="button-layout number-only" value="5" id="5" onclick="addNumber(this);">5</button>
+                        <button class="button-layout number-only" value="6" id="6" onclick="addNumber(this);">6</button>
+
+
+                        <br/>
+
+                        <button class="button-layout number-only" value="7" id="7" onclick="addNumber(this);">7</button>
+                        <button class="button-layout number-only" value="8" id="8" onclick="addNumber(this);">8</button>
+                        <button class="button-layout number-only" value="9" id="9" onclick="addNumber(this);">9</button>
+
+                        <br/>
+
+                        <button class="button-layout number-only" value="0" id="0" onclick="addNumber(this);">0</button>
+
+
+                            <input type="button" value="Start" id="startBtn" onclick="startTimer();"/>
+                            <input type="button" value="Stop" id="stopBtn" onclick="stopTimer();"/>
+                            <button value="Clear" id="clearAll" onclick="clearAll();"/>Clear</button>
+
+
+
+                </div>
+            </div>
+        </div>
+
+      <script src="microwave.js"></script>
+
+    </body>
+</html>
